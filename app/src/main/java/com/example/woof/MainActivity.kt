@@ -109,6 +109,7 @@ fun DogItem(
  * @param dogIcon is the resource ID for the image of the dog
  * @param modifier modifiers to set to this composable
  */
+
 @Composable
 fun DogIcon(
     @DrawableRes dogIcon: Int,
@@ -145,10 +146,12 @@ fun DogInformation(
     Column(modifier = modifier) {
         Text(
             text = stringResource(dogName),
-            modifier = Modifier.padding(top = dimensionResource(R.dimen.padding_small))
+            style = MaterialTheme.typography.displayMedium,
+            modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small))
         )
         Text(
             text = stringResource(R.string.years_old, dogAge),
+            style = MaterialTheme.typography.bodyLarge
         )
     }
 }

@@ -5,7 +5,6 @@ import android.os.Build
 import android.view.View
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Shapes
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
@@ -18,6 +17,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 import com.example.woof.ui.theme.Shapes
+import com.example.woof.ui.theme.Typography
 
 
 private val LightColors = lightColorScheme(
@@ -111,7 +111,7 @@ fun WoofTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         shapes = Shapes,
-        //typography = Typography,
+        typography = Typography,
         content = content
     )
 }
